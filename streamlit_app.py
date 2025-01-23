@@ -18,8 +18,8 @@ def download_model(url, output_path):
 
 model_url = "https://drive.google.com/uc?export=download&id=1WxTfnHN_WjMiNEVE0tQIHwyWcy1qLxen"
 feature_url = "https://drive.google.com/uc?export=download&id=1m_7xJOl0I3Oyweu1k65sJG122w1cH-qr"
-model_path = "data/final_rf_model.pkl"
-feature_path = "data/final_rf_model_features.pkl"
+model_path = "final_rf_model.pkl"
+feature_path = "final_rf_model_features.pkl"
 
 if not os.path.exists(model_path):
     st.write("Downloading model...")
