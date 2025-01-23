@@ -12,9 +12,9 @@ except Exception as e:
 st.title("Car Price Prediction App")
 st.write("Enter the car details below to predict the price in Euros.")
 
-power_kw = st.number_input("Power (kW):", min_value=0.0, step=0.1)
-power_ps = st.number_input("Power (PS):", min_value=0.0, step=0.1)
-fuel_consumption = st.number_input("Fuel Consumption (g/km):", min_value=0.0, step=0.1)
+power_kw = st.number_input("Power (kW):", min_value=0.0, step=10)
+power_ps = st.number_input("Power (PS):", min_value=0.0, step=10)
+fuel_consumption = st.number_input("Fuel Consumption (g/km):", min_value=0.0, step=10)
 mileage_in_km = st.number_input("Mileage (in km):", min_value=0.0, step=100.0)
 car_age = st.number_input("Car Age (Years):", min_value=0, step=1)
 
@@ -34,7 +34,7 @@ colors = [
 ]
 transmissions = [
     'transmission_type_Manual', 'transmission_type_Automatic',
-    'transmission_type_Semi-automatic', 'transmission_type_Unknown'
+    'transmission_type_Semi-automatic'
 ]
 fuel_types = [
     'fuel_type_Diesel', 'fuel_type_Petrol', 'fuel_type_Hybrid',
