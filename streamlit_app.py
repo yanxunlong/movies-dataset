@@ -3,8 +3,8 @@ import pandas as pd
 import joblib
 
 try:
-    model = joblib.load("final_rf_model.pkl")
-    feature_names = joblib.load("final_rf_model_features.pkl") 
+    model = joblib.load("data/final_rf_model.pkl")
+    feature_names = joblib.load("data/final_rf_model_features.pkl") 
     st.write("Model and feature names loaded successfully!")
 except Exception as e:
     st.error(f"Error loading model or feature names: {e}")
