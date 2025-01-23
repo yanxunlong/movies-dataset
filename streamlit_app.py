@@ -13,7 +13,6 @@ st.title("Car Price Prediction App")
 st.write("Enter the car details below to predict the price in Euros.")
 
 power_kw = st.number_input("Power (kW):", min_value=0.0, step=0.1)
-power_ps = st.number_input("Power (PS):", min_value=0.0, step=0.1)
 fuel_consumption = st.number_input("Fuel Consumption (g/km):", min_value=0.0, step=0.1)
 mileage_in_km = st.number_input("Mileage (in km):", min_value=0.0, step=100.0)
 car_age = st.number_input("Car Age (Years):", min_value=0, step=1)
@@ -56,7 +55,6 @@ if st.button("Predict"):
     try:
         input_data = pd.DataFrame({
             "power_kw": [power_kw],
-            "power_ps": [power_ps],
             "fuel_consumption_g_km": [fuel_consumption],
             "mileage_in_km": [mileage_in_km],
             "car_age_years": [car_age],
