@@ -5,7 +5,7 @@ import joblib
 try:
     model = joblib.load("data/final_rf_model.pkl")
     feature_names = joblib.load("data/final_rf_model_features.pkl") 
-    st.write("Model and feature names loaded successfully!")
+    st.write("Model and feature names loaded successfully1111!")
 except Exception as e:
     st.error(f"Error loading model or feature names: {e}")
 
