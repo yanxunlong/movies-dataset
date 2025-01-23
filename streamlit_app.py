@@ -34,7 +34,7 @@ colors = [
 ]
 transmissions = [
     'transmission_type_Manual', 'transmission_type_Automatic',
-    'transmission_type_Semi-automatic', 'transmission_type_Unknown'
+    'transmission_type_Semi-automatic'
 ]
 fuel_types = [
     'fuel_type_Diesel', 'fuel_type_Petrol', 'fuel_type_Hybrid',
